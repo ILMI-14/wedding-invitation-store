@@ -1,135 +1,145 @@
-# 💐 Toko Undangan Pernikahan Terlengkap
+# 💐 Toko Undangan Pernikahan Premium
 
-Web e-commerce yang indah dan fungsional untuk menjual undangan pernikahan dengan berbagai kategori dan desain.
+Web e-commerce modern untuk penjualan undangan pernikahan dengan desain elegan dan fitur lengkap.
 
 ## ✨ Fitur Utama
 
-### 🎨 Tema dan Kustomisasi
-- **5 Tema Warna Berbeda:**
-  - 🌹 Romantis (Merah-Gold)
-  - ✨ Elegan (Putih-Silver)
-  - 🎭 Vintage (Krem-Bronze)
-  - 🌟 Modern (Biru-Gold)
-  - 🌅 Sunset (Orange-Pink)
+### 🎨 Desain & Tampilan
+- Desain modern dan elegan terinspirasi dari our-wedding.link
+- Animasi floating elements yang menarik
+- 5 kategori produk berbeda (Minimalis, Romantis, Modern, Klasik, Mewah)
+- 12 produk undangan dengan gambar emoji dan deskripsi lengkap
 
-- **Mode Gelap/Terang:** Toggle otomatis antara mode siang dan malam
-- **Penyimpanan Preferensi:** Tema dan mode disimpan di localStorage
+### 🌙 Dark Mode
+- Toggle dark/light mode
+- Tema disimpan di localStorage
+- Transisi smooth antar tema
 
-### 🎬 Animasi dan Efek Visual
-- Hati melayang di hero section
-- Bunga-bunga bergerak floating
-- Efek shine pada card produk
-- Smooth transitions dan hover effects
-- Animasi stagger untuk grid produk
-- Pulse effect pada badge produk
+### 🛒 Shopping Cart
+- Tambah/hapus produk
+- Update jumlah quantity
+- Perhitungan otomatis subtotal, pajak 10%, dan total
+- Persisten cart di localStorage
 
-### 🛍️ Fitur E-Commerce
-- **15+ Kategori Undangan:** Berbagai pilihan gaya (Minimalis, Romantis, Mewah, Modern, Tradisional)
-- **Harga Dinamis:** Setiap kategori memiliki harga berbeda
-- **Pencarian:** Cari undangan berdasarkan nama, kategori, atau deskripsi
-- **Filter:** Filter berdasarkan gaya desain
-- **Sorting:** Urutkan dari harga terendah ke tertinggi atau sebaliknya
-- **Detail Produk Modal:** Lihat informasi lengkap produk dalam modal popup
-- **Keranjang Belanja:** Tambah, hapus, dan ubah jumlah item
-- **Perhitungan Otomatis:** Subtotal, pajak (10%), dan total
+### 🔍 Filter & Search
+- Filter by kategori
+- Search by nama atau deskripsi
+- Sort by harga (rendah-tinggi atau sebaliknya)
+- Sort by trending atau newest
 
 ### 📱 Responsive Design
-- Bekerja sempurna di desktop, tablet, dan mobile
-- Grid layout yang adaptif
+- Mobile-first approach
+- Responsive di semua ukuran layar
 - Navigation yang user-friendly
 
-### 💾 Penyimpanan Data
-- LocalStorage untuk menyimpan keranjang belanja
-- Persisten tema dan mode pilihan pengguna
+### 📋 Sections
+1. **Navigation** - Header dengan logo, menu, theme toggle, dan cart
+2. **Hero** - Banner dengan CTA buttons dan floating elements
+3. **Collections** - Grid produk dengan filter dan search
+4. **Features** - 6 keunggulan bisnis
+5. **Pricing** - 3 paket harga (Starter, Standar, Premium)
+6. **Testimonials** - Review dari pelanggan
+7. **Contact** - Formulir kontak dan info perusahaan
+8. **Footer** - Links, social media, dan info bisnis
 
 ## 🚀 Cara Menggunakan
 
-1. **Buka File:** Buka `index.html` di browser modern
-2. **Pilih Tema:** Gunakan dropdown "Tema Warna" di header untuk mengubah skema warna
-3. **Toggle Mode:** Klik tombol bulan/matahari untuk mengganti mode gelap/terang
-4. **Cari Produk:** Gunakan search bar atau filter untuk menemukan undangan yang sesuai
-5. **Lihat Detail:** Klik tombol "Lihat Detail" untuk informasi produk lengkap
-6. **Tambah ke Keranjang:** Gunakan tombol "Tambah ke Keranjang" atau quick add
-7. **Manage Keranjang:** Klik ikon keranjang untuk melihat, mengedit, atau checkout
+1. **Buka file** `index.html` di browser
+2. **Jelajahi koleksi** undangan di section Collections
+3. **Filter & Search** untuk menemukan produk yang sesuai
+4. **Lihat detail** produk dengan klik tombol "Lihat"
+5. **Tambah ke keranjang** dengan mengisi quantity dan klik button
+6. **Manage keranjang** dengan klik icon shopping bag di navbar
+7. **Toggle dark mode** dengan klik icon moon/sun
 
 ## 📁 Struktur File
 
 ```
-├── index.html           # File HTML utama
+├── index.html          # File HTML utama
 ├── css/
-│   ├── styles.css       # Style utama
-│   ├── dark-theme.css   # Dark mode styles
-│   └── animations.css   # Animasi dan keyframes
+│   └── main.css       # Styling lengkap
 ├── js/
-│   ├── theme.js         # Manajemen tema dan dark mode
-│   ├── app.js           # Logika aplikasi utama
-│   └── cart.js          # Manajemen keranjang belanja
-└── README.md            # File ini
+│   ├── main.js        # Logika aplikasi utama
+│   ├── theme.js       # Dark mode toggle
+│   └── cart.js        # Cart persistence
+└── README.md          # File ini
 ```
 
 ## 🎨 Palet Warna
 
-### Tema Romantis (Default)
-- Primary: #c41e3a (Merah)
-- Secondary: #ffd700 (Gold)
-- Accent: #ff69b4 (Pink)
+- **Primary**: #c41e3a (Merah)
+- **Secondary**: #ffd700 (Gold)
+- **Accent**: #ff69b4 (Pink)
+- **Dark**: #1a1a1a (Hitam)
+- **Light**: #f5f5f5 (Putih)
+- **Text**: #333333 (Abu-abu Gelap)
+- **Gray**: #888888 (Abu-abu)
 
-### Tema Elegan
-- Primary: #f5f5f5 (Putih)
-- Secondary: #c0c0c0 (Silver)
-- Accent: #e6e6fa (Lavender)
+## 📦 Produk Default
 
-### Tema Vintage
-- Primary: #8b7355 (Brown)
-- Secondary: #cd7f32 (Bronze)
-- Accent: #f4e4c1 (Cream)
+12 produk undangan dengan berbagai kategori:
+- Minimalis (3 produk)
+- Romantis (3 produk)
+- Modern (2 produk)
+- Klasik (2 produk)
+- Mewah (2 produk)
 
-### Tema Modern
-- Primary: #1a3a5c (Navy Blue)
-- Secondary: #ffd700 (Gold)
-- Accent: #4a90e2 (Light Blue)
+Harga berkisar dari Rp 70.000 - Rp 150.000
 
-### Tema Sunset
-- Primary: #ff6b35 (Orange)
-- Secondary: #ff8c42 (Light Orange)
-- Accent: #ff1493 (Deep Pink)
+## 🌐 Technologies
 
-## 🛠️ Teknologi
-
-- **HTML5** - Markup struktur
+- **HTML5** - Markup
 - **CSS3** - Styling dan animasi
-- **JavaScript (Vanilla)** - Interaktivitas dan logika
-- **Font Awesome** - Icon library
-- **LocalStorage API** - Penyimpanan data lokal
+- **JavaScript** - Interaktivitas
+- **Font Awesome** - Icons
+- **Google Fonts** - Typography (Playfair Display, Poppins, Cormorant Garamond)
+- **LocalStorage** - Data persistence
 
-## 📋 Produk Default
+## 💡 Fitur Tambahan
 
-Terdapat 15 produk undangan default dengan:
-- Nama dan deskripsi unik
-- Harga berbeda (75,000 - 135,000)
-- Kategori beragam (Minimalis, Romantis, Mewah, Modern, Tradisional)
-- Emoji representasi
-- Badge khusus (Bestseller, Trending, Premium, dll)
-- Stok tersedia
+### Modal
+- Product detail modal dengan informasi lengkap
+- Shopping cart modal dengan summary
 
-## 🎯 Fitur Masa Depan
+### Notifikasi
+- Toast notification saat item ditambahkan
+- User feedback untuk setiap aksi
 
-- [ ] Integrasi backend untuk database produk dinamis
-- [ ] Sistem pembayaran real
-- [ ] User authentication dan account management
-- [ ] Rating dan review produk
-- [ ] Wishlist
-- [ ] Notifikasi real-time
-- [ ] Admin panel untuk manajemen produk
-- [ ] Order history
-- [ ] Social sharing
+### Animations
+- Floating elements di hero section
+- Hover effects pada cards
+- Smooth transitions
+- Wave animation di hero
 
-## 💡 Tips Penggunaan
+## 🔧 Customization
 
-1. **Harga dapat diubah:** Edit nilai `price` di array `products` di `js/app.js`
-2. **Tambah produk baru:** Tambahkan object baru ke array `products`
-3. **Kustomisasi warna:** Ubah nilai CSS variables di `:root` di `css/styles.css`
-4. **Animasi:** Sesuaikan duration dan delay di `css/animations.css`
+### Menambah Produk Baru
+Edit array `products` di `js/main.js`:
+```javascript
+{
+    id: 13,
+    name: 'Nama Undangan',
+    category: 'kategori',
+    description: 'Deskripsi produk',
+    price: 99000,
+    image: '🎀',
+    badge: 'Badge',
+    stock: 100
+}
+```
+
+### Mengubah Harga
+Edit property `price` di masing-masing produk
+
+### Mengubah Warna
+Edit CSS variables di `css/main.css`:
+```css
+:root {
+    --primary: #c41e3a;
+    --secondary: #ffd700;
+    --accent: #ff69b4;
+}
+```
 
 ## 📱 Browser Support
 
@@ -141,12 +151,8 @@ Terdapat 15 produk undangan default dengan:
 
 ## 📝 License
 
-Free to use and modify for personal and commercial projects.
-
-## 💌 Catatan Khusus
-
-Web ini dirancang dengan nuansa pernikahan yang elegan. Setiap elemen visual dipilih untuk mencerminkan keindahan dan keanggunan momen spesial pernikahan. Animasi hati dan bunga melayang memberikan sentuhan romantis yang membuat pengalaman berbelanja menjadi lebih menyenangkan.
+Free to use and modify for personal and commercial use.
 
 ---
 
-**Dibuat dengan ❤️ untuk membuat momen spesial Anda lebih bermakna**
+**Dibuat dengan ❤️ untuk momen spesial Anda**
