@@ -38,62 +38,66 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1>Undangan Pernikahan Impian Anda</h1>
-                <p>Koleksi undangan premium dengan desain eksklusif, tema beragam, dan kualitas terbaik untuk hari istimewa Anda</p>
-                <div class="hero-buttons">
-                    <button class="btn btn-primary" onclick="document.getElementById('collections').scrollIntoView({behavior: 'smooth'})">Lihat Koleksi</button>
-                    <button class="btn btn-secondary" onclick="document.getElementById('features').scrollIntoView({behavior: 'smooth'})">Pelajari Lebih Lanjut</button>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">Undangan Pernikahan Impian Anda</h1>
+                    <p class="hero-subtitle">Koleksi undangan premium dengan desain eksklusif, tema beragam, dan kualitas terbaik untuk hari istimewa Anda</p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" onclick="document.getElementById('collections').scrollIntoView({behavior: 'smooth'})">Lihat Koleksi</button>
+                        <button class="btn btn-secondary">Hubungi Kami</button>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="hero-card">
+                        <div class="card-shine"></div>
+                        <div class="hero-emoji">💍</div>
+                    </div>
                 </div>
             </div>
-            <div class="hero-image">
-                <div class="floating-elements">
-                    <div class="element heart">💕</div>
-                    <div class="element flower">🌹</div>
-                    <div class="element ring">💍</div>
-                    <div class="element rose">🌸</div>
-                </div>
-                <svg class="wave" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                    <path d="M0,50 Q300,0 600,50 T1200,50 L1200,120 L0,120 Z" fill="url(#gradient)"></path>
-                    <defs>
-                        <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                            <stop offset="0%" style="stop-color:#ff69b4; stop-opacity:0.3"/>
-                            <stop offset="100%" style="stop-color:#ffd700; stop-opacity:0.3"/>
-                        </linearGradient>
-                    </defs>
-                </svg>
-            </div>
+        </div>
+        <div class="hero-wave">
+            <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M0,50 Q300,0 600,50 T1200,50 L1200,120 L0,120 Z" fill="url(#waveGradient)"></path>
+                <defs>
+                    <linearGradient id="waveGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" style="stop-color:#ff69b4; stop-opacity:0.3"/>
+                        <stop offset="100%" style="stop-color:#ffd700; stop-opacity:0.3"/>
+                    </linearGradient>
+                </defs>
+            </svg>
         </div>
     </section>
 
     <!-- Collections Section -->
     <section id="collections" class="collections">
         <div class="container">
-            <h2 class="section-title">Koleksi Undangan Terlengkap</h2>
-            <p class="section-subtitle">Pilih dari berbagai kategori dan tema sesuai gaya pernikahan Anda</p>
+            <div class="section-header">
+                <h2 class="section-title">💎 Koleksi Undangan Terlengkap</h2>
+                <p class="section-subtitle">Pilih dari berbagai kategori dan tema sesuai gaya pernikahan Anda</p>
+            </div>
             
             <div class="filter-bar">
                 <div class="filter-group">
                     <select id="category-filter">
-                        <option value="">Semua Kategori</option>
-                        <option value="minimalis">Minimalis</option>
-                        <option value="romantis">Romantis</option>
-                        <option value="modern">Modern</option>
-                        <option value="klasik">Klasik</option>
-                        <option value="mewah">Mewah</option>
+                        <option value="">📋 Semua Kategori</option>
+                        <option value="minimalis">✨ Minimalis</option>
+                        <option value="romantis">💕 Romantis</option>
+                        <option value="modern">🌟 Modern</option>
+                        <option value="klasik">👑 Klasik</option>
+                        <option value="mewah">💎 Mewah</option>
                     </select>
                 </div>
                 <div class="filter-group">
                     <select id="sort-filter">
-                        <option value="trending">Trending</option>
-                        <option value="price-low">Harga Rendah</option>
-                        <option value="price-high">Harga Tinggi</option>
-                        <option value="newest">Terbaru</option>
+                        <option value="trending">🔥 Trending</option>
+                        <option value="price-low">💰 Harga Rendah</option>
+                        <option value="price-high">💸 Harga Tinggi</option>
+                        <option value="newest">⭐ Terbaru</option>
                     </select>
                 </div>
                 <div class="filter-group">
-                    <input type="text" id="search-input" placeholder="Cari undangan...">
+                    <input type="text" id="search-input" placeholder="🔍 Cari undangan...">
                 </div>
             </div>
 
@@ -106,37 +110,67 @@
     <!-- Features Section -->
     <section id="features" class="features">
         <div class="container">
-            <h2 class="section-title">Keunggulan Kami</h2>
+            <div class="section-header">
+                <h2 class="section-title">✨ Keunggulan Kami</h2>
+                <p class="section-subtitle">Mengapa memilih toko undangan kami?</p>
+            </div>
             <div class="features-grid">
                 <div class="feature-card">
                     <div class="feature-icon">🎨</div>
                     <h3>Desain Eksklusif</h3>
-                    <p>Ratusan template premium dirancang oleh designer profesional</p>
+                    <p>Ratusan template premium dirancang oleh designer profesional terbaik</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">🌈</div>
                     <h3>Tema Beragam</h3>
-                    <p>5 tema warna berbeda yang bisa dikustomisasi sesuai keinginan</p>
+                    <p>5 tema warna berbeda yang bisa dikustomisasi sesuai keinginan Anda</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">⚡</div>
+                    <div class="feature-icon">⭐</div>
                     <h3>Kualitas Premium</h3>
-                    <p>Material terbaik dengan finishing yang sempurna</p>
+                    <p>Material terbaik dengan finishing yang sempurna dan tahan lama</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">🚚</div>
                     <h3>Pengiriman Cepat</h3>
-                    <p>Pengiriman ke seluruh Indonesia dengan tracking real-time</p>
+                    <p>Pengiriman ke seluruh Indonesia dengan tracking real-time yang akurat</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">💬</div>
                     <h3>Konsultasi Gratis</h3>
-                    <p>Tim profesional siap membantu Anda 24/7</p>
+                    <p>Tim profesional siap membantu Anda 24/7 dengan respons cepat</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">✏️</div>
                     <h3>Kustomisasi Penuh</h3>
-                    <p>Sesuaikan desain dengan nama, warna, dan informasi Anda</p>
+                    <p>Sesuaikan desain dengan nama, warna, dan informasi Anda sendiri</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-us">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">❤️ Mengapa Memilih Kami?</h2>
+            </div>
+            <div class="why-grid">
+                <div class="why-card">
+                    <div class="why-number">1000+</div>
+                    <p>Pelanggan Puas</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-number">500+</div>
+                    <p>Desain Unik</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-number">5+</div>
+                    <p>Tahun Berpengalaman</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-number">100%</div>
+                    <p>Kepuasan Terjamin</p>
                 </div>
             </div>
         </div>
@@ -145,12 +179,14 @@
     <!-- Pricing Section -->
     <section id="pricing" class="pricing">
         <div class="container">
-            <h2 class="section-title">Paket Harga</h2>
-            <p class="section-subtitle">Pilih paket yang sesuai dengan kebutuhan Anda</p>
+            <div class="section-header">
+                <h2 class="section-title">💰 Paket Harga</h2>
+                <p class="section-subtitle">Pilih paket yang sesuai dengan kebutuhan dan budget Anda</p>
+            </div>
             
             <div class="pricing-grid">
                 <div class="pricing-card">
-                    <div class="price-badge">STARTER</div>
+                    <div class="price-badge">🌟 STARTER</div>
                     <h3>Paket Dasar</h3>
                     <div class="price">Rp 50.000 - 75.000</div>
                     <ul class="price-features">
@@ -164,7 +200,7 @@
                 </div>
                 
                 <div class="pricing-card featured">
-                    <div class="price-badge special">POPULER</div>
+                    <div class="price-badge special">🔥 POPULER</div>
                     <h3>Paket Standar</h3>
                     <div class="price">Rp 85.000 - 125.000</div>
                     <ul class="price-features">
@@ -178,7 +214,7 @@
                 </div>
                 
                 <div class="pricing-card">
-                    <div class="price-badge">PREMIUM</div>
+                    <div class="price-badge">👑 PREMIUM</div>
                     <h3>Paket Mewah</h3>
                     <div class="price">Rp 130.000 - 200.000</div>
                     <ul class="price-features">
@@ -197,8 +233,10 @@
     <!-- Testimonials Section -->
     <section id="testimonials" class="testimonials">
         <div class="container">
-            <h2 class="section-title">Testimoni Pelanggan</h2>
-            <p class="section-subtitle">Kepuasan pelanggan adalah prioritas utama kami</p>
+            <div class="section-header">
+                <h2 class="section-title">⭐ Testimoni Pelanggan</h2>
+                <p class="section-subtitle">Kepuasan pelanggan adalah prioritas utama kami</p>
+            </div>
             
             <div class="testimonials-grid">
                 <div class="testimonial-card">
@@ -217,7 +255,7 @@
                     <div class="stars">⭐⭐⭐⭐⭐</div>
                     <p class="testimonial-text">"Proses pengerjaan cepat, hasil memuaskan, dan pelayanan sangat profesional. Rekomendasi terbaik untuk undangan pernikahan!"</p>
                     <div class="testimonial-author">
-                        <div class="author-avatar">💒</div>
+                        <div class="author-avatar">💑</div>
                         <div>
                             <p class="author-name">Rini & Doni</p>
                             <p class="author-event">Pernikahan April 2024</p>
@@ -229,7 +267,7 @@
                     <div class="stars">⭐⭐⭐⭐⭐</div>
                     <p class="testimonial-text">"Kualitas premium dengan harga terjangkau. Pilihan tema yang beragam membuat saya mudah memilih sesuai selera!"</p>
                     <div class="testimonial-author">
-                        <div class="author-avatar">💍</div>
+                        <div class="author-avatar">💒</div>
                         <div>
                             <p class="author-name">Lily & Ady</p>
                             <p class="author-event">Pernikahan Desember 2024</p>
@@ -240,44 +278,83 @@
         </div>
     </section>
 
+    <!-- Gallery Section -->
+    <section class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">🖼️ Galeri Desain</h2>
+                <p class="section-subtitle">Lihat inspirasi desain undangan kami</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <div class="gallery-image">💐</div>
+                    <p>Floral Classic</p>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-image">✨</div>
+                    <p>Modern Elegant</p>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-image">💎</div>
+                    <p>Luxury Premium</p>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-image">🌹</div>
+                    <p>Romantic Rose</p>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-image">🌿</div>
+                    <p>Minimalist Green</p>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-image">🎭</div>
+                    <p>Vintage Style</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title">Hubungi Kami</h2>
+            <div class="section-header">
+                <h2 class="section-title">📞 Hubungi Kami</h2>
+                <p class="section-subtitle">Kami siap membantu mewujudkan undangan impian Anda</p>
+            </div>
             <div class="contact-content">
                 <div class="contact-info">
                     <div class="info-item">
                         <i class="fas fa-phone"></i>
                         <div>
-                            <h3>Telepon</h3>
+                            <h3>📱 Telepon</h3>
                             <p>+62 812-3456-7890</p>
                         </div>
                     </div>
                     <div class="info-item">
                         <i class="fas fa-envelope"></i>
                         <div>
-                            <h3>Email</h3>
+                            <h3>📧 Email</h3>
                             <p>info@undanganpremium.com</p>
                         </div>
                     </div>
                     <div class="info-item">
                         <i class="fas fa-map-marker-alt"></i>
                         <div>
-                            <h3>Lokasi</h3>
+                            <h3>📍 Lokasi</h3>
                             <p>Jakarta, Indonesia</p>
                         </div>
                     </div>
                     <div class="info-item">
                         <i class="fas fa-clock"></i>
                         <div>
-                            <h3>Jam Operasional</h3>
+                            <h3>⏰ Jam Operasional</h3>
                             <p>Senin - Jumat: 09:00 - 18:00</p>
                             <p>Sabtu: 10:00 - 16:00</p>
                         </div>
                     </div>
                 </div>
                 
-                <form class="contact-form">
+                <form class="contact-form" onsubmit="handleSubmit(event)">
                     <input type="text" placeholder="Nama Anda" required>
                     <input type="email" placeholder="Email Anda" required>
                     <input type="text" placeholder="Nomor Telepon" required>
@@ -293,11 +370,11 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>Tentang Kami</h3>
-                    <p>Kami adalah penyedia undangan pernikahan premium dengan desain terbaik dan kualitas tertinggi.</p>
+                    <h3>💐 Tentang Kami</h3>
+                    <p>Kami adalah penyedia undangan pernikahan premium dengan desain terbaik dan kualitas tertinggi selama lebih dari 5 tahun.</p>
                 </div>
                 <div class="footer-section">
-                    <h3>Link Cepat</h3>
+                    <h3>🔗 Link Cepat</h3>
                     <ul>
                         <li><a href="#home">Beranda</a></li>
                         <li><a href="#collections">Koleksi</a></li>
@@ -306,12 +383,12 @@
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h3>Ikuti Kami</h3>
+                    <h3>📱 Ikuti Kami</h3>
                     <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-tiktok"></i></a>
-                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+                        <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+                        <a href="#"><i class="fab fa-tiktok"></i> TikTok</a>
+                        <a href="#"><i class="fab fa-whatsapp"></i> WhatsApp</a>
                     </div>
                 </div>
             </div>
@@ -325,7 +402,7 @@
     <div class="modal" id="cart-modal">
         <div class="modal-content cart-modal">
             <div class="modal-header">
-                <h2>Keranjang Belanja</h2>
+                <h2>🛒 Keranjang Belanja</h2>
                 <button class="close-btn" onclick="closeModal('cart-modal')">&times;</button>
             </div>
             <div class="modal-body">
@@ -348,7 +425,7 @@
                         <span id="total">Rp 0</span>
                     </div>
                 </div>
-                <button class="btn btn-primary" style="width: 100%; margin-top: 15px;">Lanjut ke Checkout</button>
+                <button class="btn btn-primary" style="width: 100%; margin-top: 15px;">🛍️ Lanjut ke Checkout</button>
             </div>
         </div>
     </div>
@@ -359,7 +436,7 @@
             <button class="close-btn" onclick="closeModal('product-modal')">&times;</button>
             <div class="product-detail">
                 <div class="detail-image">
-                    <div id="detail-img" style="font-size: 150px; display: flex; align-items: center; justify-content: center;"></div>
+                    <div id="detail-img" style="font-size: 120px; display: flex; align-items: center; justify-content: center;"></div>
                 </div>
                 <div class="detail-info">
                     <h2 id="detail-name"></h2>
@@ -372,9 +449,9 @@
                         <span id="detail-price"></span>
                     </div>
                     <div class="quantity-selector">
-                        <label>Jumlah:</label>
+                        <label>📦 Jumlah:</label>
                         <div class="qty-control">
-                            <button id="qty-minus">-</button>
+                            <button id="qty-minus">−</button>
                             <input type="number" id="qty-input" value="1" min="1">
                             <button id="qty-plus">+</button>
                         </div>

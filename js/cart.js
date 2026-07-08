@@ -15,3 +15,8 @@ function loadCart() {
 window.addEventListener('load', () => {
     loadCart();
 });
+
+// Save cart whenever it changes
+window.addEventListener('beforeunload', () => {
+    saveCart();
+});
