@@ -1,0 +1,221 @@
+/* Keyframe Animations */
+
+@keyframes slideInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(400px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes shine {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+  14% {
+    transform: scale(1.3);
+  }
+  28% {
+    transform: scale(1);
+  }
+  42% {
+    transform: scale(1.3);
+  }
+  70% {
+    transform: scale(1);
+  }
+}
+
+/* Animation Classes */
+
+.floating-heart {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  font-size: 40px;
+  animation: float 4s ease-in infinite;
+  transform: translateX(calc(-50% + var(--offset, 0px)));
+}
+
+.floating-heart:nth-child(1) {
+  --offset: -200px;
+  animation-delay: 0s;
+}
+
+.floating-heart:nth-child(2) {
+  --offset: 0px;
+  animation-delay: 1s;
+}
+
+.floating-heart:nth-child(3) {
+  --offset: 200px;
+  animation-delay: 2s;
+}
+
+.floating-flower {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  font-size: 50px;
+  animation: float 5s ease-in infinite;
+  transform: translateX(calc(-50% + var(--offset-flower, 0px))) rotate(var(--rotate, 0deg));
+}
+
+.floating-flower:nth-child(4) {
+  --offset-flower: -300px;
+  --rotate: 0deg;
+  animation-delay: 0s;
+}
+
+.floating-flower:nth-child(5) {
+  --offset-flower: 0px;
+  --rotate: 45deg;
+  animation-delay: 0.5s;
+}
+
+.floating-flower:nth-child(6) {
+  --offset-flower: 300px;
+  --rotate: -45deg;
+  animation-delay: 1s;
+}
+
+.product-card {
+  animation: fadeIn 0.6s ease;
+}
+
+.product-badge {
+  animation: pulse 2s infinite;
+}
+
+/* Interactive animations */
+.btn-primary:active {
+  animation: bounce 0.3s ease;
+}
+
+.theme-toggle:active {
+  animation: spin 0.6s ease;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Scroll animations */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Stagger animation for grid items */
+.products-grid > * {
+  animation: fadeIn 0.6s ease backwards;
+}
+
+.products-grid > *:nth-child(1) { animation-delay: 0.1s; }
+.products-grid > *:nth-child(2) { animation-delay: 0.2s; }
+.products-grid > *:nth-child(3) { animation-delay: 0.3s; }
+.products-grid > *:nth-child(4) { animation-delay: 0.4s; }
+.products-grid > *:nth-child(5) { animation-delay: 0.5s; }
+.products-grid > *:nth-child(6) { animation-delay: 0.6s; }
+.products-grid > *:nth-child(7) { animation-delay: 0.7s; }
+.products-grid > *:nth-child(8) { animation-delay: 0.8s; }
+.products-grid > *:nth-child(9) { animation-delay: 0.9s; }
+.products-grid > *:nth-child(10) { animation-delay: 1s; }
+.products-grid > *:nth-child(n+11) { animation-delay: 1.1s; }

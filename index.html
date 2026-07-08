@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💐 Toko Undangan Pernikahan Terlengkap</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/dark-theme.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header dengan Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-ring"></i>
+                    <h1>💐 Undangan Pernikahan</h1>
+                </div>
+                
+                <nav class="nav-controls">
+                    <!-- Theme Selector -->
+                    <div class="theme-selector">
+                        <label for="theme-select">Tema Warna:</label>
+                        <select id="theme-select">
+                            <option value="romantic">🌹 Romantis (Merah-Gold)</option>
+                            <option value="elegant">✨ Elegan (Putih-Silver)</option>
+                            <option value="vintage">🎭 Vintage (Krem-Bronze)</option>
+                            <option value="modern">🌟 Modern (Biru-Gold)</option>
+                            <option value="sunset">🌅 Sunset (Orange-Pink)</option>
+                        </select>
+                    </div>
+
+                    <!-- Dark/Light Toggle -->
+                    <button id="theme-toggle" class="theme-toggle" title="Toggle Dark Mode">
+                        <i class="fas fa-moon"></i>
+                    </button>
+
+                    <!-- Cart -->
+                    <div class="cart-icon" id="cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section dengan Animasi -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="floating-heart">💕</div>
+            <div class="floating-heart" style="animation-delay: 0.5s">💕</div>
+            <div class="floating-heart" style="animation-delay: 1s">💕</div>
+            <div class="floating-flower">🌹</div>
+            <div class="floating-flower" style="animation-delay: 0.7s">🌺</div>
+            <div class="floating-flower" style="animation-delay: 1.4s">🌸</div>
+            
+            <h2 class="hero-title">Temukan Undangan Impian Anda</h2>
+            <p class="hero-subtitle">Koleksi undangan pernikahan terlengkap dengan desain eksklusif</p>
+            
+            <div class="hero-search">
+                <input type="text" id="search-input" placeholder="Cari kategori undangan...">
+                <button id="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+        <div class="hero-animation">
+            <svg viewBox="0 0 1200 300" preserveAspectRatio="none">
+                <path d="M0,150 Q300,50 600,150 T1200,150" fill="none" stroke="url(#gradient)" stroke-width="3"/>
+                <defs>
+                    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" style="stop-color: #ff69b4; stop-opacity: 0.5"/>
+                        <stop offset="100%" style="stop-color: #ffd700; stop-opacity: 0.5"/>
+                    </linearGradient>
+                </defs>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-controls">
+                <div class="filter-group">
+                    <label for="sort-price">Urutkan:</label>
+                    <select id="sort-price">
+                        <option value="none">Semua Kategori</option>
+                        <option value="low-to-high">Harga Rendah ke Tinggi</option>
+                        <option value="high-to-low">Harga Tinggi ke Rendah</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="filter-style">Gaya Desain:</label>
+                    <select id="filter-style">
+                        <option value="">Semua Gaya</option>
+                        <option value="modern">Modern</option>
+                        <option value="traditional">Tradisional</option>
+                        <option value="minimal">Minimalis</option>
+                        <option value="luxury">Mewah</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <main class="container">
+        <section class="products-section">
+            <div class="products-grid" id="products-grid">
+                <!-- Produk akan dimuat di sini -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Cart Modal -->
+    <div class="cart-modal" id="cart-modal">
+        <div class="cart-modal-content">
+            <div class="cart-header">
+                <h2>🛍️ Keranjang Belanja</h2>
+                <button class="close-btn" id="close-cart">&times;</button>
+            </div>
+            <div class="cart-items" id="cart-items">
+                <!-- Item keranjang akan muncul di sini -->
+            </div>
+            <div class="cart-summary">
+                <div class="summary-row">
+                    <span>Subtotal:</span>
+                    <span id="subtotal">Rp 0</span>
+                </div>
+                <div class="summary-row">
+                    <span>Pajak (10%):</span>
+                    <span id="tax">Rp 0</span>
+                </div>
+                <div class="summary-row total">
+                    <span>Total:</span>
+                    <span id="total">Rp 0</span>
+                </div>
+                <button class="checkout-btn">Lanjut ke Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Detail Modal -->
+    <div class="product-modal" id="product-modal">
+        <div class="product-modal-content">
+            <button class="close-btn" id="close-modal">&times;</button>
+            <div class="product-modal-body">
+                <div class="product-image">
+                    <img id="modal-image" src="" alt="">
+                </div>
+                <div class="product-details">
+                    <h2 id="modal-title"></h2>
+                    <p id="modal-description"></p>
+                    <div class="modal-meta">
+                        <span class="style-tag" id="modal-style"></span>
+                        <span class="quantity-available" id="modal-quantity"></span>
+                    </div>
+                    <div class="price-section">
+                        <div class="price-info">
+                            <label>Harga:</label>
+                            <span id="modal-price" class="price"></span>
+                        </div>
+                    </div>
+                    <div class="quantity-selector">
+                        <label for="quantity">Jumlah:</label>
+                        <div class="quantity-control">
+                            <button id="qty-minus">−</button>
+                            <input type="number" id="quantity" value="1" min="1">
+                            <button id="qty-plus">+</button>
+                        </div>
+                    </div>
+                    <button class="add-to-cart-btn" id="add-to-cart-modal">
+                        <i class="fas fa-cart-plus"></i> Tambah ke Keranjang
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Toko Undangan Pernikahan | Membuat Momen Spesial Anda Lebih Bermakna 💕</p>
+            <div class="footer-links">
+                <a href="#">Tentang Kami</a>
+                <a href="#">Hubungi Kami</a>
+                <a href="#">Kebijakan Privasi</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/theme.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>
